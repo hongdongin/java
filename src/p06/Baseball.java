@@ -23,21 +23,33 @@ public class Baseball {
 		
 		baseballnum = new int[] {5,0,1};
 		Scanner sc = new Scanner(System.in);
-		System.out.println("네가 생각하는 숫자를, 를 기준으로 3개만 불러봐: ");
+		System.out.println("네가 생각하는 숫자 3가지 골라봐: ");
 		String baseballnumStr = sc.nextLine();
-		int count=9;
 		String[] baseballnumStrs = baseballnumStr.split(",");
 		int [] baseballNums = new int [baseballnumStrs.length];
 		for(int i=0; i<baseballnumStrs.length;i++) {
-		//baseballNums[i] = Integer.parseInt(baseballnumStrs[i]);
-		
-		if (baseballNums[i] == Integer.parseInt(baseballnumStrs[i])) {
-			count++;
-
-		  }
-		System.out.print("ball"+ ": " + count+" , "+ "strike"+ ": " + count);
+		baseballNums[i] = Integer.parseInt(baseballnumStrs[i]);
 		}
 		
+		int strike = 0;
+		int ball = 0;
+		for(int i=0; i<baseballnum.length;i++) {
+			for(int j=0; j<baseballNums.length;j++) {
+				
+				if(baseballnum[i] == baseballNums[j]) {
+					if(i==j) {
+						strike ++;
+					}else {
+						ball++;
+					}
+					break;
+				}
+		    
+		  }
+		
+		}
+		
+		System.out.println(strike +" strike , " + ball + " ball");
 	}
 
 }
