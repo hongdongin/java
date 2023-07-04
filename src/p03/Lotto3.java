@@ -25,14 +25,14 @@ public class Lotto3 {
 		int count = 0;
 		String[] strs = lottoStr.split(","); // [1, 2, 3, 4, 5, 6]
 		for (int i = 0; i < strs.length; i++) {
-			for(int j=0; j<lotto.length; j++) {
-				
-				if(lotto[j] == Integer.parseInt(strs[i])) {
+			for (int j = 0; j < lotto.length; j++) {
+
+				if (lotto[j] == Integer.parseInt(strs[i])) {
 					count++;
-					
+
 				}
 			}
 		}
-		System.out.println("많이 맞힌 갯수는 :" + count );
+		System.out.println("많이 맞힌 갯수는 :" + count);
 	}
 }
