@@ -31,6 +31,7 @@ public class ListTest4 {
 			}
 	
 		}
+		
 		System.out.println("맞은 갯수는 : " + cnt + "개입니다." );
 
 	}
