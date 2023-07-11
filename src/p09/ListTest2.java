@@ -30,13 +30,13 @@ public class ListTest2 {
 			} else {
 				System.out.println(num);
 			}
-			
-			for(int i1=0; i1<numList.size(); i1++) {
+
+			for (int i1 = 0; i1 < numList.size(); i1++) {
 				String numStr = numList.get(i1).toString();
 				numStr = numStr.replace("3", "짝");
 				numStr = numStr.replace("6", "짝");
 				numStr = numStr.replace("9", "짝");
-				System.out.println(numList.get(i1) + " : "+numStr);
+				System.out.println(numList.get(i1) + " : " + numStr);
 			}
 		}
 	}
