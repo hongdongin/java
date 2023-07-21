@@ -83,6 +83,7 @@ public class MapList2 {
 		
 		/*for(int i=0; i<mapList.size();i++) {
 			Map<String,String> map = mapList.get(i);*/
+		
 		for(Map<String,String> map : mapList) {
 			Iterator<String>it = map.keySet().iterator();
 			while(it.hasNext()) {
